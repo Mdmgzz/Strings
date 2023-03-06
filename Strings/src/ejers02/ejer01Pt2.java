@@ -25,7 +25,7 @@ public class ejer01Pt2 {
 		//int Final=sentencia.indexOf("/*");
 		
 		for (int i=0; i<sentencia.length();i++) {
-			cad1
+			//cad1
 		}
 				
 		// cerramos scanner
