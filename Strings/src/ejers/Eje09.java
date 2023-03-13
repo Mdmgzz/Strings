@@ -1,6 +1,5 @@
 package ejers;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Eje09 {
@@ -24,7 +23,7 @@ public class Eje09 {
 		char[] conjunto1 = {'e', 'i', 'k', 'm', 'p', 'q', 'r', 's', 't', 'u', 'v'};			//el conjunto de valores a codificar
 		char[] conjunto2 = {'p', 'v', 'i', 'u', 'm', 't', 'e', 'r', 'k', 'q', 's'};			// los valores por los que se sustituyen
 		String cad1;																		// lo que introduzca el usuario																		
-		char[] codificacion = new char[0];													// el array con el resultado
+		String codificacion="";													// el array con el resultado
 		char c;																				// la letra a codificar
 		
 		//creamos scnnaer
@@ -36,8 +35,7 @@ public class Eje09 {
 		
 		for(int i=0; i<cad1.length(); i++) {										 //pasamos por toda la palabra introducida
 			c = cad1.charAt(i); 												 	 //Cogemos el caracter 'i' de la palabra
-			codificacion = Arrays.copyOf(codificacion, codificacion.length+1); 		 //aumentamos en 1
-			codificacion[i] = codifica(conjunto1, conjunto2, c); 					 //guardamos en la posicion la letra codificada
+			codificacion+= codifica(conjunto1, conjunto2, c); 					 	//guardamos en la posicion la letra codificada
 		}
 		
 		//mostramos el resultado
